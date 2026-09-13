@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brighten Your World Team Support</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:60px 40px;}
+.page{max-width:900px;margin:0 auto;}
+.page-header{margin-bottom:48px;}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;color:#1D5249;line-height:1.15;margin-bottom:10px;}
+.page-title span{font-style:italic;color:#C9973C;}
+.page-sub{font-size:18px;color:#666;font-weight:300;}
+
+/* TOP ANNOUNCEMENT */
+.top-block{border-radius:16px;border:2px solid #0C447C;margin-bottom:36px;overflow:hidden;}
+.top-header{padding:20px 32px;background:#0C447C;font-size:18px;font-weight:500;color:#fff;}
+.top-row{padding:28px 32px;border-top:none;display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:start;}
+
+/* WEEK BLOCKS */
+.week-block{border-radius:16px;border:1px solid #ddd7cc;margin-bottom:24px;overflow:hidden;background:#fff;}
+.week-header{padding:18px 28px;font-size:19px;font-weight:600;color:#232323;display:flex;align-items:center;gap:12px;background:#F5F3EF;border-bottom:3px solid #ddd7cc;}
+.week-tag{font-size:14px;font-weight:500;padding:5px 14px;border-radius:12px;}
+
+/* WEEK-SPECIFIC COLORS */
+.week-block:nth-of-type(2) .week-header{background:#E6F1FB;border-bottom-color:#0C447C;}
+.week-block:nth-of-type(3) .week-header{background:#E1F5EE;border-bottom-color:#085041;}
+.week-block:nth-of-type(4) .week-header{background:#FFF3E0;border-bottom-color:#C9973C;}
+.week-block:nth-of-type(5) .week-header{background:#FCE9EA;border-bottom-color:#A94955;}
+.week-block:nth-of-type(6) .week-header{background:#F0F4FF;border-bottom-color:#4A5D7C;}
+
+/* STANDARD CALL ROW */
+.call-row{padding:24px 28px;border-top:1px solid #ede7dc;display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:start;}
+
+/* NEW — highlighted rows */
+.call-row.new{background:#FFFBEC;border-top:1px solid #F0D98A;border-left:5px solid #C9973C;}
+.team-row.new{background:#FFFBEC;border-top:1px solid #F0D98A;border-left:5px solid #C9973C;padding:24px 28px;display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:start;}
+
+.team-row{padding:24px 28px;border-top:1px solid #ede7dc;display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:start;background:#EEF5FF;}
+
+.new-label{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:8px;background:#C9973C;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;}
+
+.time-col{text-align:right;}
+.time-main{font-size:22px;font-weight:500;color:#232323;display:block;}
+.time-zones{font-size:13px;color:#888;display:block;margin-top:5px;line-height:2.1;}
+.call-name{font-size:18px;font-weight:500;color:#1D5249;margin:0 0 6px;}
+.call-name.amber{color:#854F0B;}
+.call-name.blue{color:#0C447C;}
+.call-detail{font-size:15px;color:#666;margin:0 0 12px;line-height:1.7;}
+.badge-link{display:inline-block;font-size:13px;font-weight:500;padding:5px 14px;border-radius:12px;margin-right:6px;text-decoration:none;}
+.badge-plain{display:inline-block;font-size:13px;font-weight:500;padding:5px 14px;border-radius:12px;margin-right:6px;}
+.link-line{margin-top:10px;display:flex;align-items:baseline;gap:10px;}
+.link-label{font-size:12px;font-weight:500;color:#888;min-width:64px;flex-shrink:0;text-transform:uppercase;letter-spacing:.05em;}
+.link-url{font-size:15px;color:#185FA5;text-decoration:none;font-weight:500;}
+.link-url:hover{text-decoration:underline;}
+.link-placeholder{font-size:14px;color:#aaa;font-style:italic;}
+.bullet-list{margin:6px 0 10px 18px;padding:0;}
+.bullet-list li{font-size:15px;color:#555;line-height:2.1;}
+.footer{margin-top:60px;padding-top:28px;border-top:1px solid #ddd7cc;text-align:center;}
+.footer p{font-size:15px;color:#aaa;font-weight:300;}
+.footer span{color:#C9973C;}
+.legend{display:flex;align-items:center;gap:12px;margin-bottom:28px;padding:14px 20px;background:#FFFBEC;border-radius:10px;border:1px solid #F0D98A;}
+.legend-dot{width:14px;height:14px;background:#C9973C;border-radius:3px;flex-shrink:0;}
+.legend-text{font-size:15px;color:#7A4F00;font-weight:400;line-height:1.5;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="page-header">
+  <h1 class="page-title">Brighten Your <span>World</span> Team Support</h1>
+  <p class="page-sub">Tuesday call schedule · All times shown in all US time zones · MT = Boulder, Colorado home base</p>
+  <div style="margin-top:20px;">
+    <p style="font-size:15px;color:#333;margin-bottom:8px;"><strong>Invite your guests using this link:</strong></p>
+    <a href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="display:inline-block;background:#C9973C;color:#fff;font-size:15px;font-weight:500;padding:12px 28px;border-radius:8px;text-decoration:none;transition:background 0.3s;">https://team.brightenyourworld.club/scienceandsolutions</a>
+  </div>
+</div>
+
+<!-- KEY MESSAGE -->
+<div style="margin:32px 0;padding:32px 36px;background:#F8F6F2;border-left:6px solid #C9973C;border-radius:12px;">
+  <p style="font-size:18px;font-weight:600;color:#1D5249;margin-bottom:16px;line-height:1.4;">How We Present BEMER to Your Guests</p>
+  
+  <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:14px;"><strong>Instead of 3-way calls,</strong> we use a professional presentation system with Q&A featuring an expert panel to answer your guests' questions.</p>
+  
+  <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:14px;"><strong>Everything below</strong> (except for the light pink background section on 2nd Tuesday, which is for team only) is developed <em>for your guests</em>. Your success stories that address our guests' concerns are what make this work.</p>
+  
+  <div style="margin:20px 0;padding:20px;background:#fff;border-radius:8px;border:1px solid #E8DCC8;">
+    <p style="font-size:15px;color:#6B2E40;font-weight:600;margin-bottom:8px;">🎯 Your Role & How to Invite:</p>
+    <ul style="margin:8px 0 8px 24px;padding:0;list-style:disc;">
+      <li style="font-size:15px;color:#333;line-height:1.7;margin-bottom:8px;"><strong>Use the link at the top and bottom of this sheet</strong> to invite your guests to all presentations</li>
+      <li style="font-size:15px;color:#333;line-height:1.7;margin-bottom:8px;">Please <strong>listen closely to your guests' concerns</strong></li>
+      <li style="font-size:15px;color:#333;line-height:1.7;margin-bottom:8px;">Be ready to <strong>raise your hand to share your 90-second compliant story</strong> that addresses those concerns</li>
+      <li style="font-size:15px;color:#333;line-height:1.7;"><strong>Inviting your guests is the number one thing you can do</strong> to successfully share BEMER with others</li>
+    </ul>
+  </div>
+</div>
+
+<!-- LISTEN TO GUESTS - PINK SECTION -->
+<div style="margin:24px 0;padding:28px 36px;background:#EDD9E5;border-left:6px solid #C99FB5;border-radius:12px;">
+  <p style="font-size:16px;font-weight:600;color:#6B2E40;margin-bottom:12px;line-height:1.4;">🎧 Please Listen Closely to Our Guests' Concerns</p>
+  <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:8px;"><strong>Make sure we address your guests' concerns FIRST during the presentation.</strong></p>
+  <p style="font-size:15px;color:#333;line-height:1.8;"><strong>Text me at <span style="font-size:16px;font-weight:700;color:#6B2E40;">970-352-8873</span></strong> the day before OR during the first 30 minutes of the meeting to let me know about their concerns so we can address them during the presentation.</p>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="legend-dot"></div>
+  <p class="legend-text"><strong>Backgrounds: Blue = clinical track · Green = research · Pink = business building with ease</strong></p>
+  <p class="legend-text" style="margin-top:12px;"><strong>Invite your guests</strong> using this landing page to send to your guests: <a href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="color:#0C447C;font-weight:600;text-decoration:none;">https://team.brightenyourworld.club/scienceandsolutions</a></p>
+</div>
+
+<!-- 1ST TUESDAY -->
+<div class="week-block" style="background:#E8F0F8;">
+  <div class="week-header" style="background:#D0E0F0;color:#1D5249;">
+    <span class="week-tag" style="background:#0C447C;color:#fff;">1st Tuesday</span>
+    <span style="color:#0C447C;font-weight:500;">Systems Biology with BEMER Presentation / Q&A</span>
+  </div>
+
+  <div class="call-row new" style="background:#D0E0F0;border-top:1px solid #0C447C;border-left:5px solid #0C447C;">
+    <div class="time-col">
+      <span class="time-main" style="color:#0C447C;font-weight:600;">5 pm MT</span>
+      <span class="time-zones" style="color:#042C53;font-weight:500;">4 pm PT<br>6 pm CT<br>7 pm ET</span>
+    </div>
+    <div class="call-col">
+      <span class="new-label" style="background:#0C447C;">New</span>
+      <p class="call-name" style="color:#0C447C;font-weight:600;">Invite health care providers & distributors</p>
+      <p class="call-detail" style="color:#042C53;">Systems biology focus · Deep dive into microcirculation and nervous system balance · How BEMER supports health from the inside out · No BEMER sales presentation · Health care providers & distributor guests welcome</p>
+      <a class="badge-link" href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="background:#0C447C;color:#fff;">Invite guests</a>
+      <div class="link-line"><span class="link-label" style="color:#0C447C;font-weight:600;">Zoom</span><a class="link-url" style="color:#042C53;font-weight:500;" href="https://us02web.zoom.us/j/4490649602?pwd=NkxTTDYyeUVScnhOTkpTSTZtWW1wUT09" target="_blank">Join — Lynell's Zoom</a></div>
+    </div>
+  </div>
+
+  <div class="call-row" style="background:#E8F0F8;border-top:1px solid #D0E0F0;">
+    <div class="time-col">
+      <span class="time-main" style="color:#185FA5;">6 pm MT</span>
+      <span class="time-zones" style="color:#185FA5;">5 pm PT<br>7 pm CT<br>8 pm ET</span>
+    </div>
+    <div class="call-col">
+      <p class="call-name" style="color:#185FA5;">BEMER Presentation with Q&A & Success Stories</p>
+      <p class="call-detail">Health & body systems overview · BEMER benefits and applications · Learn from success stories · Open Q&A with expert panel</p>
+      <a class="badge-link" href="https://pipervetowich.github.io/Brighten-Your-Being/index.html" target="_blank" style="background:#D0E0F0;color:#0C447C;">Invite guests</a>
+      <div class="link-line"><span class="link-label" style="color:#185FA5;">Zoom</span><a class="link-url" style="color:#0C447C;" href="https://zoom.us/j/9048684550?pwd=bzRJdEptTlIzZjRNVm1vb2JETzEzZz09#success" target="_blank">Join — Belinda's Zoom</a></div>
+      <div class="link-line"><span class="link-label" style="color:#185FA5;">Link</span><a class="link-url" style="color:#0C447C;" href="https://bemermeetings.online" target="_blank">Bemermeetings.online</a></div>
+      <div class="link-line"><span class="link-label" style="color:#185FA5;">Passcode</span><span style="color:#0C447C;font-weight:500;">236377</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 2ND TUESDAY -->
+<div class="week-block">
+  <div class="week-header" style="background:#C99FB5;color:#fff;">
+    <span class="week-tag" style="background:#A0738A;color:#fff;">2nd Tuesday</span>
+    <span style="color:#fff;font-weight:600;">TEAM only - Distributor Q&A followed by 30 mins of Brighten Your World team tools</span>
+  </div>
+  <div style="padding:12px 32px;background:#F5F0F2;border-bottom:2px solid #C99FB5;">
+    <p style="font-size:15px;color:#6B2E40;font-weight:500;margin:0;">Here is where you learn how we do what we do with ease and flow.</p>
+  </div>
+
+  <div class="call-row" style="background:#D4A8B8;border-top:1px solid #A0738A;">
+    <div class="time-col">
+      <span class="time-main" style="color:#fff;font-weight:600;">6 pm MT</span>
+      <span class="time-zones" style="color:#fff;">5 pm PT<br>7 pm CT<br>8 pm ET</span>
+    </div>
+    <div class="call-col">
+      <p class="call-name" style="color:#fff;">Family night — distributors Q&A</p>
+      <p class="call-detail" style="color:#fff;">Open Q&A on human BEMER systems · Distributors share experiences · No guests</p>
+      <a class="badge-link" href="https://zoom.us/j/9048684550?pwd=bzRJdEptTlIzZjRNVm1vb2JETzEzZz09#success" target="_blank" style="background:#A0738A;color:#fff;">Zoom</a>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Zoom</span><a class="link-url" style="color:#fff;font-weight:500;" href="https://zoom.us/j/9048684550?pwd=bzRJdEptTlIzZjRNVm1vb2JETzEzZz09#success" target="_blank">Join — Belinda's Zoom</a></div>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Link</span><a class="link-url" style="color:#fff;font-weight:500;" href="https://bemermeetings.online" target="_blank">Bemermeetings.online</a></div>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Passcode</span><span style="color:#fff;font-weight:500;">236377</span></div>
+    </div>
+  </div>
+
+  <div class="team-row new" style="background:#F0E8E8;border-top:1px solid #E8DCDC;border-left:5px solid #C9A8A8;">
+    <div class="time-col">
+      <span class="time-main" style="color:#6B4A5F;">7 pm MT</span>
+      <span class="time-zones" style="color:#8B6A7F;">6 pm PT<br>8 pm CT<br>9 pm ET</span>
+    </div>
+    <div class="call-col">
+      <span class="new-label" style="background:#C9A8A8;">New</span>
+      <p class="call-name" style="color:#6B4A5F;">Brighten Your World team meeting · 30 minutes</p>
+      <p class="call-detail" style="margin-bottom:4px;color:#333;">Co-led by LoriGrace Kochevar + Dr. Michael Gaeta</p>
+      <p class="call-detail" style="color:#333;">You do not have to build your BEMER business alone. Join us to explore the team tools, education, and support systems that help you grow with more ease, momentum, impact, and income. We have a process we want to share!</p>
+      <div class="link-line"><span class="link-label" style="color:#8B6A7F;">Zoom</span><a class="link-url" style="color:#6B4A5F;" href="https://us02web.zoom.us/j/83709532336?pwd=pF1hGbcwtrL7RJhVe1KiO41VNojhWY.1#success" target="_blank">Join — Dr. Gaeta's Zoom</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- 3RD TUESDAY -->
+<div class="week-block">
+  <div class="week-header" style="background:#D4C4B8;color:#5D4A3F;">
+    <span class="week-tag" style="background:#8A7860;color:#fff;">3rd Tuesday</span>
+    <span style="color:#5D4A3F;">INVITE customer Usage Q&A + Invite Guests to BEMER Presentation with Q&A from expert panel</span>
+  </div>
+
+  <div class="call-row" style="background:#C4B0A0;border-top:1px solid #8A7860;border-left:5px solid #8A7860;">
+    <div class="time-col">
+      <span class="time-main" style="color:#fff;font-weight:600;">5 pm MT</span>
+      <span class="time-zones" style="color:#fff;">4 pm PT<br>6 pm CT<br>7 pm ET</span>
+    </div>
+    <div class="call-col">
+      <p class="call-name" style="color:#fff;">BEMER USAGE</p>
+      <p class="call-detail" style="color:#fff;">Invite customers and IBDs to ask questions · Bring usage questions · Watch operating videos first · 45 min · Open to all BEMER owners</p>
+      <a class="badge-link" href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="background:#8A7860;color:#fff;">Invite guests</a>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Zoom</span><a class="link-url" style="color:#fff;font-weight:500;" href="https://zoom.us/j/9048684550?pwd=bzRJdEptTlIzZjRNVm1vb2JETzEzZz09#success" target="_blank">Join — Belinda's Zoom</a></div>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Link</span><a class="link-url" style="color:#fff;font-weight:500;" href="https://bemermeetings.online" target="_blank">Bemermeetings.online</a></div>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Passcode</span><span style="color:#fff;font-weight:500;">236377</span></div>
+    </div>
+  </div>
+
+  <div class="call-row" style="background:#E8DCC8;border-top:1px solid #D4C4B8;">
+    <div class="time-col">
+      <span class="time-main" style="color:#5D4A3F;">6 pm MT</span>
+      <span class="time-zones" style="color:#7A6A5A;">5 pm PT<br>7 pm CT<br>8 pm ET</span>
+    </div>
+    <div class="call-col">
+      <p class="call-name" style="color:#5D4A3F;">Invite Guests to BEMER Presentation</p>
+      <p class="call-detail">Q&A from expert panel · BEMER overview & testimonials</p>
+      <a class="badge-link" href="https://pipervetowich.github.io/Brighten-Your-Being/index.html" target="_blank" style="background:#D4C4B8;color:#5D4A3F;">Invite guests</a>
+      <div class="link-line"><span class="link-label" style="color:#7A6A5A;">Zoom</span><a class="link-url" style="color:#5D4A3F;" href="https://zoom.us/j/9048684550?pwd=bzRJdEptTlIzZjRNVm1vb2JETzEzZz09#success" target="_blank">Join — Belinda's Zoom</a></div>
+      <div class="link-line"><span class="link-label" style="color:#7A6A5A;">Link</span><a class="link-url" style="color:#5D4A3F;" href="https://bemermeetings.online" target="_blank">Bemermeetings.online</a></div>
+      <div class="link-line"><span class="link-label" style="color:#7A6A5A;">Passcode</span><span style="color:#5D4A3F;">236377</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4TH TUESDAY -->
+<div class="week-block">
+  <div class="week-header" style="background:#D4C4B8;color:#5D4A3F;">
+    <span class="week-tag" style="background:#8A7860;color:#fff;">4th Tuesday</span>
+    <span style="color:#5D4A3F;font-weight:500;">Animal Wellness & Clinical / Research Meeting with BEMER Presentation / Q&A</span>
+  </div>
+
+  <div class="call-row" style="background:#C4B0A0;border-top:1px solid #8A7860;border-left:5px solid #8A7860;">
+    <div class="time-col">
+      <span class="time-main" style="color:#fff;font-weight:600;">6 pm MT</span>
+      <span class="time-zones" style="color:#fff;">5 pm PT<br>7 pm CT<br>8 pm ET</span>
+    </div>
+    <div class="call-col">
+      <p class="call-name" style="color:#fff;">BEMER Animal Presentation - equine and canine</p>
+      <p class="call-detail" style="color:#fff;">Wellness conversation for horse and dog community · Includes Dog Set & Livaty</p>
+      <a class="badge-link" href="https://pipervetowich.github.io/Brighten-Your-Being/index.html" target="_blank" style="background:#8A7860;color:#fff;">Invite guests</a>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Zoom</span><a class="link-url" style="color:#fff;font-weight:500;" href="https://zoom.us/j/9048684550?pwd=bzRJdEptTlIzZjRNVm1vb2JETzEzZz09#success" target="_blank">Join — Belinda's Zoom</a></div>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Link</span><a class="link-url" style="color:#fff;font-weight:500;" href="https://bemermeetings.online" target="_blank">Bemermeetings.online</a></div>
+      <div class="link-line"><span class="link-label" style="color:#fff;font-weight:600;">Passcode</span><span style="color:#fff;font-weight:500;">236377</span></div>
+    </div>
+  </div>
+
+  <div class="team-row new" style="background:#E8F5E9;border-top:1px solid #D4EDD6;border-left:5px solid #2D7A40;">
+    <div class="time-col">
+      <span class="time-main" style="color:#2D7A40;">7 pm MT</span>
+      <span class="time-zones" style="color:#4A8A60;">6 pm PT<br>8 pm CT<br>9 pm ET</span>
+    </div>
+    <div class="call-col">
+      <span class="new-label" style="background:#2D7A40;">New</span>
+      <p class="call-name" style="color:#2D7A40;">Clinical / Research Meeting · 30 minutes</p>
+      <p class="call-detail" style="margin-bottom:4px;color:#333;">Co-led by LoriGrace Kochevar + Dr. Michael Gaeta</p>
+      <p class="call-detail" style="color:#333;">The more we understand the physiology behind BEMER, the more confidently we can share it. Join us for a deeper look at the research, clinical applications, and why BEMER supports health from the inside out.</p>
+      <a class="badge-link" href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="background:#2D7A40;color:#fff;">Invite guests</a>
+      <div class="link-line"><span class="link-label" style="color:#4A8A60;">Zoom</span><a class="link-url" style="color:#2D7A40;" href="https://us02web.zoom.us/j/83709532336?pwd=pF1hGbcwtrL7RJhVe1KiO41VNojhWY.1#success" target="_blank">Join — Dr. Gaeta's Zoom</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAYTIME OFFERS TITLE MOVED HERE -->
+<div style="margin:40px 0 32px 0;">
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:400;color:#1D5249;line-height:1.15;margin-bottom:16px;">Daytime <span style="font-style:italic;color:#C9973C;">offers</span></h2>
+</div>
+
+<!-- FRIDAY -->
+<div class="week-block" style="border:2px solid #4A5D7C;margin-top:8px;">
+  <div class="week-header" style="background:#2E3F5C;">
+    <span class="week-tag" style="background:#4A5D7C;color:#B5C8E8;">3rd Friday</span>
+    <span style="color:#B5C8E8;font-size:17px;">Systems Biology with Health care providers & distributors</span>
+  </div>
+
+  <div class="call-row new" style="background:#F0F4FF;border-top:none;border-left:5px solid #4A5D7C;">
+    <div class="time-col">
+      <span class="time-main" style="color:#2E3F5C;">11 am MT</span>
+      <span class="time-zones" style="color:#4A5D7C;">10 am PT<br>12 pm CT<br>1 pm ET</span>
+    </div>
+    <div class="call-col">
+      <span class="new-label" style="background:#4A5D7C;">New</span>
+      <p class="call-name" style="color:#2E3F5C;">Invite health care providers & distributors</p>
+      <p class="call-detail">Systems biology focus · No BEMER presentation · Health care providers & distributor guests welcome</p>
+      <a class="badge-link" href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="background:#4A5D7C;color:#fff;">Invite guests</a>
+      <div class="link-line"><span class="link-label">Zoom</span><a class="link-url" href="https://us02web.zoom.us/j/4490649602?pwd=NkxTTDYyeUVScnhOTkpTSTZtWW1wUT09" target="_blank">Join — Lynell's Zoom</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4TH THURSDAY - CLINICAL RESEARCH PRESENTATION -->
+<div class="week-block" style="border:2px solid #3B6B3B;margin-bottom:16px;">
+  <div class="week-header" style="background:#2D5A2D;">
+    <span class="week-tag" style="background:#4A8A4A;color:#fff;">4th Thursday</span>
+    <span style="color:#fff;">Clinical Research Presentation — Science &amp; Solutions</span>
+  </div>
+
+  <div class="call-row" style="border-top:none;background:#F0F7F0;">
+    <div class="time-col">
+      <span class="time-main" style="color:#2D5A2D;">10 am MT</span>
+      <span class="time-zones">9 am PT<br>11 am CT<br>12 pm ET</span>
+    </div>
+    <div class="call-col">
+      <p class="call-name" style="color:#2D5A2D;">The Microcirculation Series</p>
+      <p class="call-detail" style="font-size:16px;color:#444;">New topics each month · Dr. Michael Gaeta + LoriGrace Kochevar, MS, LPC</p>
+      <a class="badge-link" href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="background:#4A8A4A;color:#fff;">Invite guests</a>
+
+      <p style="font-size:17px;font-weight:300;line-height:1.85;color:#333;margin-bottom:16px;">Explore the research and welcome to an extraordinary exploration of how our bodies heal — and how we might support that process in ways we are only beginning to understand.</p>
+
+      <p style="font-size:17px;font-weight:300;line-height:1.85;color:#333;margin-bottom:18px;">In 2026 we will explore how optimizing microcirculation and autonomic nervous system balance, with PEMF and light therapy, supports all twelve body systems:</p>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px;">
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Cardiovascular</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Respiratory</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Digestive</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Muscular</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Skeletal</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Endocrine <span style="opacity:.65;font-size:11px;">(hormones)</span></div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Integumentary <span style="opacity:.65;font-size:11px;">(skin)</span></div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Immune</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Urinary</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Reproductive</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Lymphatic</div>
+        <div style="background:#fff;border:1px solid #B8D8BA;border-radius:8px;padding:10px 8px;font-size:14px;color:#2D5A2D;text-align:center;">Nervous</div>
+      </div>
+
+      <div class="link-line"><span class="link-label">Register</span><a class="link-url" href="https://api.leadconnectorhq.com/widget/form/VlnHTWv8W7MLM6jX792H" target="_blank">Science &amp; Solutions Registration</a></div>
+
+      <div style="margin-top:28px;background:#0C447C;border-radius:16px;padding:32px 36px;">
+        <p style="font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:8px;">Most Important</p>
+        <p style="font-size:18px;font-weight:400;color:#fff;line-height:1.7;margin-bottom:16px;">Share this link to invite guests to <em>all</em> of our presentations so they can learn about the science behind this technology.</p>
+        <a href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="display:inline-block;background:#C9973C;color:#fff;font-size:17px;font-weight:500;padding:14px 32px;border-radius:40px;text-decoration:none;letter-spacing:.04em;">&#9733; &nbsp;Invite Guests — Share This Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CLINICIAN TRACK -->
+<div class="week-block" style="border:2px solid #0C447C;margin-bottom:24px;background:#E8F0F8;">
+  <div class="week-header" style="background:#D0E0F0;border-bottom:2px solid #0C447C;">
+    <span class="week-tag" style="background:#0C447C;color:#fff;font-size:16px;padding:8px 16px;">Clinician Track</span>
+  </div>
+  
+  <div style="padding:32px;">
+    <div style="padding:16px 20px;background:#fff;border-left:4px solid #0C447C;border-radius:6px;margin-bottom:24px;">
+      <p style="font-size:15px;color:#0C447C;font-weight:600;margin-bottom:8px;">📚 How We Teach</p>
+      <p style="font-size:14px;color:#333;line-height:1.7;">We teach to the highest denominator in the Zoom. If there are questions that need a lot of explanation, those will go offline so we can keep the presentation moving at an advanced level.</p>
+    </div>
+
+    <p style="font-size:16px;font-weight:600;color:#0C447C;margin-bottom:16px;">Why Invite a Health care provider to Systems Biology?</p>
+    <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:12px;">This is not a sales presentation — it's an opportunity for health care providers to understand the science and systems biology behind BEMER, especially microcirculation, nervous system regulation, and cellular health.</p>
+    
+    <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:12px;margin-top:16px;"><strong>When they are curious:</strong> Ask if they would like to hear more and then send invitations to learn about BEMER by:</p>
+    <ul style="margin:10px 0 14px 28px;padding:0;list-style:disc;">
+      <li style="font-size:15px;color:#333;line-height:1.8;margin-bottom:8px;">Sending the clinical email series (available in Business Accelerator)</li>
+      <li style="font-size:15px;color:#333;line-height:1.8;margin-bottom:8px;">Inviting them to Clinical Research Presentation (4th Thursday)</li>
+      <li style="font-size:15px;color:#333;line-height:1.8;">Inviting them to 1st or 3rd Tuesday night</li>
+    </ul>
+    
+    <p style="font-size:15px;color:#333;line-height:1.8;margin:20px 0 12px 0;"><strong>Let them choose by sharing this link:</strong></p>
+    <div style="margin-bottom:20px;">
+      <a href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="display:inline-block;background:#0C447C;color:#fff;font-size:15px;font-weight:500;padding:14px 28px;border-radius:8px;text-decoration:none;">https://team.brightenyourworld.club/scienceandsolutions</a>
+    </div>
+    
+    <div style="padding:18px 20px;background:#D0E0F0;border-left:4px solid #0C447C;border-radius:6px;margin-top:20px;">
+      <p style="font-size:14px;font-weight:600;color:#0C447C;margin-bottom:8px;">Focus:</p>
+      <ul style="margin:8px 0 8px 24px;padding:0;list-style:disc;">
+        <li style="font-size:14px;color:#333;line-height:1.6;">Systems biology, physiology, and clinical relevance</li>
+        <li style="font-size:14px;color:#333;line-height:1.6;"><strong>No BEMER presentation</strong></li>
+        <li style="font-size:14px;color:#333;line-height:1.6;"><strong>Health Care Provider & Enthusiast welcome</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- BUSINESS ACCELERATOR -->
+<div class="week-block" style="border:2px solid #D4A084;margin-bottom:24px;background:#FBF7F2;">
+  <div class="week-header" style="background:#E8D4C4;border-bottom:2px solid #D4A084;">
+    <span class="week-tag" style="background:#D4A084;color:#fff;font-size:16px;padding:8px 16px;">Business Accelerator</span>
+  </div>
+  
+  <div style="padding:32px;">
+    <p style="font-size:18px;font-weight:600;color:#5D4A3F;margin-bottom:16px;">Accelerate your business success with this one tool.</p>
+    <p style="font-size:15px;color:#333;line-height:1.8;margin-bottom:16px;">In our premium Gold offer, you are essentially hiring an employee to bring calls to you and answer questions for your leads, a very good value.</p>
+    <div style="margin-top:20px;">
+      <a href="https://acceleratoroffer.netlify.app/" target="_blank" style="display:inline-block;background:#D4A084;color:#fff;font-size:15px;font-weight:500;padding:16px 32px;border-radius:8px;text-decoration:none;">Learn More About Business Accelerator</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Brighten Your <span>World</span> · LoriGrace Kochevar, MS, LPC · 970-352-8873 · brightenyourbeing.com</p>
+</div>
+
+</div>
+</body>
+</html>
