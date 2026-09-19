@@ -34,10 +34,28 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
 /* SIDE-BY-SIDE PAIR OF CLASS OPTIONS (1st-4th Tuesday) */
 .row-pair{display:flex;align-items:stretch;}
 .row-pair > .call-row,
-.row-pair > .team-row{flex:1 1 0;min-width:0;}
+.row-pair > .team-row,
+.row-pair > .call-row.new,
+.row-pair > .team-row.new{
+  flex:1 1 0;
+  min-width:0;
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:14px;
+  align-items:start;
+  padding:24px 20px;
+}
 .row-pair > *:nth-child(2){border-left:1px solid #ddd7cc;}
 @media (max-width:700px){
   .row-pair{display:block;}
+  .row-pair > .call-row,
+  .row-pair > .team-row,
+  .row-pair > .call-row.new,
+  .row-pair > .team-row.new{
+    grid-template-columns:190px 1fr;
+    gap:24px;
+    padding:24px 28px;
+  }
   .row-pair > *:nth-child(2){border-left:none;}
 }
 
