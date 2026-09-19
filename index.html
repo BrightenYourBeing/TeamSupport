@@ -31,6 +31,16 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
 .week-block:nth-of-type(5) .week-header{background:#FCE9EA;border-bottom-color:#A94955;}
 .week-block:nth-of-type(6) .week-header{background:#F0F4FF;border-bottom-color:#4A5D7C;}
 
+/* SIDE-BY-SIDE PAIR OF CLASS OPTIONS (1st-4th Tuesday) */
+.row-pair{display:flex;align-items:stretch;}
+.row-pair > .call-row,
+.row-pair > .team-row{flex:1 1 0;min-width:0;}
+.row-pair > *:nth-child(2){border-left:1px solid #ddd7cc;}
+@media (max-width:700px){
+  .row-pair{display:block;}
+  .row-pair > *:nth-child(2){border-left:none;}
+}
+
 /* STANDARD CALL ROW */
 .call-row{padding:24px 28px;border-top:1px solid #ede7dc;display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:start;}
 
@@ -118,6 +128,7 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
     <span style="color:#0C447C;font-weight:500;">Systems Biology with BEMER Presentation / Q&A</span>
   </div>
 
+  <div class="row-pair">
   <div class="call-row new" style="background:#D0E0F0;border-top:1px solid #0C447C;border-left:5px solid #0C447C;">
     <div class="time-col">
       <span class="time-main" style="color:#0C447C;font-weight:600;">5 pm MT</span>
@@ -146,6 +157,7 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
       <div class="link-line"><span class="link-label" style="color:#185FA5;">Passcode</span><span style="color:#0C447C;font-weight:500;">236377</span></div>
     </div>
   </div>
+  </div>
 </div>
 
 <!-- 2ND TUESDAY -->
@@ -158,6 +170,7 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
     <p style="font-size:15px;color:#6B2E40;font-weight:500;margin:0;">Here is where you learn how we do what we do with ease and flow.</p>
   </div>
 
+  <div class="row-pair">
   <div class="call-row" style="background:#D4A8B8;border-top:1px solid #A0738A;">
     <div class="time-col">
       <span class="time-main" style="color:#fff;font-weight:600;">6 pm MT</span>
@@ -186,6 +199,7 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
       <div class="link-line"><span class="link-label" style="color:#8B6A7F;">Zoom</span><a class="link-url" style="color:#6B4A5F;" href="https://us02web.zoom.us/j/83709532336?pwd=pF1hGbcwtrL7RJhVe1KiO41VNojhWY.1#success" target="_blank">Join — Dr. Gaeta's Zoom</a></div>
     </div>
   </div>
+  </div>
 </div>
 
 <!-- 3RD TUESDAY -->
@@ -195,6 +209,7 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
     <span style="color:#5D4A3F;">INVITE customer Usage Q&A + Invite Guests to BEMER Presentation with Q&A from expert panel</span>
   </div>
 
+  <div class="row-pair">
   <div class="call-row" style="background:#C4B0A0;border-top:1px solid #8A7860;border-left:5px solid #8A7860;">
     <div class="time-col">
       <span class="time-main" style="color:#fff;font-weight:600;">5 pm MT</span>
@@ -224,6 +239,7 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
       <div class="link-line"><span class="link-label" style="color:#7A6A5A;">Passcode</span><span style="color:#5D4A3F;">236377</span></div>
     </div>
   </div>
+  </div>
 </div>
 
 <!-- 4TH TUESDAY -->
@@ -233,6 +249,7 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
     <span style="color:#5D4A3F;font-weight:500;">Animal Wellness & Clinical / Research Meeting with BEMER Presentation / Q&A</span>
   </div>
 
+  <div class="row-pair">
   <div class="call-row" style="background:#C4B0A0;border-top:1px solid #8A7860;border-left:5px solid #8A7860;">
     <div class="time-col">
       <span class="time-main" style="color:#fff;font-weight:600;">6 pm MT</span>
@@ -261,6 +278,7 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
       <a class="badge-link" href="https://team.brightenyourworld.club/scienceandsolutions" target="_blank" style="background:#2D7A40;color:#fff;">Invite guests</a>
       <div class="link-line"><span class="link-label" style="color:#4A8A60;">Zoom</span><a class="link-url" style="color:#2D7A40;" href="https://us02web.zoom.us/j/83709532336?pwd=pF1hGbcwtrL7RJhVe1KiO41VNojhWY.1#success" target="_blank">Join — Dr. Gaeta's Zoom</a></div>
     </div>
+  </div>
   </div>
 </div>
 
