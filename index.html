@@ -46,18 +46,6 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
   padding:24px 20px;
 }
 .row-pair > *:nth-child(2){border-left:1px solid #ddd7cc;}
-@media (max-width:700px){
-  .row-pair{display:block;}
-  .row-pair > .call-row,
-  .row-pair > .team-row,
-  .row-pair > .call-row.new,
-  .row-pair > .team-row.new{
-    grid-template-columns:190px 1fr;
-    gap:24px;
-    padding:24px 28px;
-  }
-  .row-pair > *:nth-child(2){border-left:none;}
-}
 
 /* STANDARD CALL ROW */
 .call-row{padding:24px 28px;border-top:1px solid #ede7dc;display:grid;grid-template-columns:190px 1fr;gap:24px;align-items:start;}
@@ -92,6 +80,52 @@ body{font-family:'DM Sans',sans-serif;background:#FAF7F2;color:#232323;padding:6
 .legend{display:flex;align-items:center;gap:12px;margin-bottom:28px;padding:14px 20px;background:#FFFBEC;border-radius:10px;border:1px solid #F0D98A;}
 .legend-dot{width:14px;height:14px;background:#C9973C;border-radius:3px;flex-shrink:0;}
 .legend-text{font-size:15px;color:#7A4F00;font-weight:400;line-height:1.5;}
+
+/* MOBILE — keep desktop layout above this untouched; stack everything below this width */
+@media (max-width:700px){
+  body{padding:28px 16px;}
+  .page-title{font-size:38px;}
+  .page-sub{font-size:15px;}
+
+  .top-row{grid-template-columns:1fr;gap:10px;}
+  .top-row .time-col{text-align:left;}
+
+  /* every call/team row (paired or standalone) becomes one column: time above content */
+  .call-row,
+  .team-row,
+  .call-row.new,
+  .team-row.new{
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+    padding:20px 18px !important;
+  }
+  .call-row .time-col,
+  .team-row .time-col{
+    text-align:left;
+  }
+  .time-main{font-size:19px;}
+  .time-zones{display:inline;margin-top:4px;line-height:1.5;}
+
+  /* row-pairs stack instead of sitting side by side */
+  .row-pair{display:block;}
+  .row-pair > .call-row,
+  .row-pair > .team-row,
+  .row-pair > .call-row.new,
+  .row-pair > .team-row.new{
+    padding:20px 18px !important;
+  }
+  .row-pair > *:nth-child(2){
+    border-left:none;
+    border-top:1px solid #ddd7cc;
+  }
+
+  .call-name{font-size:17px;}
+  .call-detail{font-size:14px;}
+  .link-line{flex-wrap:wrap;}
+  .badge-link{margin-bottom:6px;}
+
+  .week-header{padding:16px 18px;flex-wrap:wrap;}
+}
 </style>
 </head>
 <body>
